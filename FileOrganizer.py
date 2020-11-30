@@ -1,15 +1,14 @@
-#currently works only for pdfs                 
-
 import glob,os
 import shutil
 
-#get the directory path  where the files resides 
-src_path ='/home/lucifer955/Downloads/'
+#get the directory path  where the files resides
+src_path = input("Enter the file path : ")
+##src_path ='/home/lucifer955/Downloads/'
 
 #get user input
 file_type = input("Enter the file type here : ")
 
-#select the file type  
+#select the file type
 arr = glob.glob(src_path + '*.%s' % file_type.lower())
 
 #name of the new directory
